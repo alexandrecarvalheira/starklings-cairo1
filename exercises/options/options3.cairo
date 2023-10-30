@@ -1,7 +1,6 @@
 // options3.cairo
 // Execute `starklings hint options3` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
 
 use option::OptionTrait;
 use debug::PrintTrait;
@@ -29,7 +28,7 @@ fn display_grades(student: @Student, index: usize) {
     if index == 0 {
         let mut msg = ArrayTrait::new();
         msg.append(*student.name);
-        msg.append('\'s grades:');
+        msg.append('\s grades:');
         debug::print(msg);
     }
     if index >= student.courses.len() {
